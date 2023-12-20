@@ -1,0 +1,87 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+
+.carrito {
+    top: 8px;
+    z-index: 99999999999;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+table td,
+table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+}
+
+.tarjeta-pago {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.mask-custom2 {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+    border-radius: 1em;
+}
+
+
+#carrito {
+    top: 50px;
+    right: 50px;
+    width: 300px;
+    z-index: 999;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    #carrito {
+        right: 5px;
+        width: 200px;
+    }
+
+
+    /* -- Diseño página de pago -- */
+    .imagen-crear {
+        display: none;
+    }
+
+    .tarjeta-pago {
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+
+    #container-pago {
+        display: flex;
+        justify-content: center;
+    }
+}
